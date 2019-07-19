@@ -129,4 +129,11 @@ public class NumberWordConverterTest {
         assertEquals("Number expected", expected, NumberWordConverter.convert(number));
     }
 
+    @Test
+    public void testZeroNumber() {
+        int number = 0;
+        String expected = "zero";
+        assertEquals("Number expected", expected, NumberWordConverter.convert(number));
+    }
+
 }
